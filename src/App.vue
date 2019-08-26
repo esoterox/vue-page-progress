@@ -1,7 +1,6 @@
 <template>
   <div>
     <ScrollProgress :scrollDirection="'vertical'" :meterSize="'10px'" :barPosition="'left'" />
-
     <div class="test-container" id="app">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>

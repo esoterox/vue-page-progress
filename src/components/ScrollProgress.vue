@@ -52,14 +52,14 @@ export default {
       },
       applyContainerPositionClass() {
           switch(this.barPosition) {
-              case 'top':
-                  return 'scroll-progress__container--top'
               case 'left':
                   return 'scroll-progress__container--left'
               case 'right':
                   return 'scroll-progress__container--right'
               case 'bottom':
                   return 'scroll-progress__container--bottom'
+              default:
+                  return 'scroll-progress__container--top'
           }
       }
   },
