@@ -1,12 +1,13 @@
 {
   "name": "vue-page-progress",
   "version": "0.1.0",
-  "private": true,
-  "description": "a simple, customisable progress bar that shows the scroll progress for a given web page.",
-  "author": "Ravi Pradhan <ravipradhan@protonmail.com>",
+  "private": false,
+  "main": "./dist/vue-scroll-progress.common.js",
+  "description": "A simple, customisable progress bar that shows the horizontal or vertical scroll progress for a given web page.",
+  "author": "Ravi Pradhan",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name vue-scroll-progress src/components/ScrollProgress.vue",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
   },
@@ -26,6 +27,11 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "vue-template-compiler": "^2.6.10"
+  },
+  "vue": {
+    "css": {
+      "extract": false
+    }
   },
   "eslintConfig": {
     "root": true,
