@@ -12,8 +12,8 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
-    "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "core-js": "^2.6.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
@@ -28,6 +28,9 @@
     "eslint-plugin-vue": "^5.0.0",
     "vue-template-compiler": "^2.6.10"
   },
+  "files": [
+    "dist/*"
+  ],
   "eslintConfig": {
     "root": true,
     "env": {
@@ -51,11 +54,6 @@
         }
       }
     ]
-  },
-  "vue": {
-    "css": {
-      "extract": false
-    }
   },
   "postcss": {
     "plugins": {
