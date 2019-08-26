@@ -1,13 +1,13 @@
 <template>
-  <div class="scroll-progress__container">
-    <span class="scroll-progress__meter" :style="{ width: `${scrollProgress}%`, height: height, 'background-color': colour }" />
+  <div class="scroll-progress__container" :class="applyContainerPositionClass">
+    <span class="scroll-progress__meter" :style="{width: applyMeterWidth, height: applyMeterHeight, 'background-color': colour}" />
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    height: {
+    meterSize: {
       type: String,
       default: "3px",
       required: false
@@ -16,6 +16,11 @@ export default {
       type: String,
       default: "#61E2CF",
       required: false
+    },
+    barPosition: {
+        type: String,
+        default: 'top',
+        required: false,
     },
     scrollDirection: {
       type: String,
@@ -27,6 +32,35 @@ export default {
   data() {
       return {
           scrollProgress: 0,
+      }
+  },
+
+  computed: {
+      applyMeterWidth() {
+          if (this.barPosition === 'top' || this.barPosition === 'bottom') {
+              return `${this.scrollProgress}%`
+          } else {
+              return `${this.meterSize}`
+          }
+      },
+      applyMeterHeight() {
+          if (this.barPosition === 'top' || this.barPosition === 'bottom') {
+              return `${this.meterSize}`
+          } else {
+              return `${this.scrollProgress}%`
+          }
+      },
+      applyContainerPositionClass() {
+          switch(this.barPosition) {
+              case 'top':
+                  return 'scroll-progress__container--top'
+              case 'left':
+                  return 'scroll-progress__container--left'
+              case 'right':
+                  return 'scroll-progress__container--right'
+              case 'bottom':
+                  return 'scroll-progress__container--bottom'
+          }
       }
   },
 
@@ -76,10 +110,29 @@ export default {
 <style>
 .scroll-progress__container {
   position: fixed;
-  top: 0;
-  left: 0;
   z-index: 9999;
-  width: 100%;
+}
+
+.scroll-progress__container--top {
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.scroll-progress__container--left {
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+.scroll-progress__container--bottom {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.scroll-progress__container--right {
+    top: 0;
+    right: 0;
+    height: 100vh;
 }
 
 .scroll-progress__meter {
