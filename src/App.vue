@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ScrollProgress
+    <PageProgress
       :scrollDirection="scroll"
       :meterSize="`${size}px`"
       :colour="colour"
@@ -52,10 +52,10 @@
 </template>
 
 <script>
-import ScrollProgress from "@/components/ScrollProgress";
+import PageProgress from "@/components/PageProgress";
 export default {
   components: {
-    ScrollProgress
+    PageProgress
   },
 
   data() {

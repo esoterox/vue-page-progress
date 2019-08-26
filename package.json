@@ -2,12 +2,12 @@
   "name": "vue-page-progress",
   "version": "0.1.0",
   "private": false,
-  "main": "./dist/vue-scroll-progress.common.js",
+  "main": "./dist/vue-page-progress.common.js",
   "description": "A simple, customisable progress bar that shows the horizontal or vertical scroll progress for a given web page.",
-  "author": "Ravi Pradhan",
+  "author": "Ravi Pradhan (https://ravii.dev)",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name vue-scroll-progress src/components/ScrollProgress.vue",
+    "build": "vue-cli-service build --target lib --name vue-page-progress src/components/index.js",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
   },
