@@ -1,28 +1,58 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <ScrollProgress :scrollDirection="'vertical'" />
+
+    <div class="test-container" id="app">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam iure est minima eaque sequi! Hic esse ab, temporibus doloribus quibusdam autem, sequi adipisci repudiandae neque perferendis voluptate reiciendis.</p>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import ScrollProgress from "@/components/ScrollProgress";
 export default {
-  name: 'app',
   components: {
-    HelloWorld
+    ScrollProgress
   }
-}
+};
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+<style scoped>
+.test-container {
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+p {
+  font-size: 1.5rem;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
 }
 </style>

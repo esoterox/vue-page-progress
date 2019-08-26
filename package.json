@@ -1,5 +1,7 @@
 {
   "name": "vue-page-progress",
+  "description": "a simple, customisable progress bar that shows the scroll progress for a given web page.",
+  "author": "Ravi Pradhan <ravipradhan@protonmail.com>",
   "version": "0.1.0",
   "private": true,
   "scripts": {
