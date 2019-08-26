@@ -1,7 +1,7 @@
-import PageProgress from './PageProgress.vue'
+import VuePageProgress from "@/components/VuePageProgress";
 
 export default {
-    install(Vue, options) {
-        Vue.component('vue-page-progress', PageProgress)
+    install(Vue) {
+        Vue.component('vue-page-progress', VuePageProgress)
     }
 }

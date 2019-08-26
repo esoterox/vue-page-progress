@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PageProgress
+    <VuePageProgress
       :scrollDirection="scroll"
       :meterSize="`${size}px`"
       :colour="colour"
@@ -52,10 +52,11 @@
 </template>
 
 <script>
-import PageProgress from "@/components/PageProgress";
+import VuePageProgress from "@/components/VuePageProgress";
 export default {
+  name: 'app',
   components: {
-    PageProgress
+    VuePageProgress
   },
 
   data() {
