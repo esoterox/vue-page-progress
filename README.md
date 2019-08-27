@@ -1,29 +1,46 @@
 # vue-page-progress
 
-## Project setup
-```
-npm install
+A simple component that provides a vertical or horizontal bar to track scroll progress for a given page.
+
+Scroll progress can either be for horizontal or vertical scrolling.
+
+## Installation
+
+TBC
+
+## Usage
+
+### Global Registration - `main.js`
+```vue
+import VuePageProgress from 'vue-page-progress'
+
+Vue.component('VuePageProgress', VuePageProgress)
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+### Register In A Component 
+```vue
+<template>
+  <div>
+    <VuePageProgress />
+  </div>
+</template>
+
+<script>
+import VuePageProgress from "vue-page-progress";
+export default {
+  name: 'app',
+  components: {
+    VuePageProgress
+  }
+}
+</script>
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Props (all optional)
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+| Prop            | Type          | | Default     | Description                       |
+| --------------- | ------------- | | ----------- | --------------------------------- |
+| meterSize       | String        | | "3px"       | The size of the progress bar fill |
+| colour          | String        | | "#61E2CF"   | The colour of the progress bar fill |
+| scrollDirection | String        | | "vertical"  | Corresponds to whether or not the scroll progress meter should fill based on `horizontal` or `vertical` scrolling |
+| barPosition     | String        | | "top"       | The position of the progress bar - can be either `top`, `right`, `bottom` or `left |
