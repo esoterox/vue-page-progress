@@ -43,4 +43,4 @@ export default {
 | meterSize       | String        | | "3px"       | The size of the progress bar fill |
 | colour          | String        | | "#61E2CF"   | The colour of the progress bar fill |
 | scrollDirection | String        | | "vertical"  | Corresponds to whether or not the scroll progress meter should fill based on `horizontal` or `vertical` scrolling |
-| barPosition     | String        | | "top"       | The position of the progress bar - can be either `top`, `right`, `bottom` or `left |
+| barPosition     | String        | | "top"       | The position of the progress bar - can be either `top`, `right`, `bottom` or `left` |
