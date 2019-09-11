@@ -6,7 +6,9 @@ Scroll progress can either be for horizontal or vertical scrolling.
 
 ## Installation
 
-TBC
+```
+npm i vue-page-progress
+```
 
 ## Usage
 
