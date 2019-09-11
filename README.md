@@ -6,20 +6,30 @@ Scroll progress can either be for horizontal or vertical scrolling.
 
 ## Installation
 
-```
+```shell
 npm i vue-page-progress
 ```
 
 ## Usage
 
-### Global Registration - `main.js`
+### Global Registration
 ```vue
+// main.js
 import VuePageProgress from 'vue-page-progress'
 
 Vue.component('VuePageProgress', VuePageProgress)
 ```
 
-### Register In A Component 
+```vue
+// in your component
+<template>
+  <div>
+    <VuePageProgress />
+  </div>
+</template>
+```
+
+### Or Register And Use In A Component 
 ```vue
 <template>
   <div>
