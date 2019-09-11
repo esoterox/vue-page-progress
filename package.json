@@ -1,6 +1,6 @@
 {
   "name": "vue-page-progress",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "main": "dist/vue-page-progress.umd.js",
   "description": "A simple, customisable progress bar that shows the horizontal or vertical scroll progress for a given web page.",
